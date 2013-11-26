@@ -1,0 +1,34 @@
+<% include header.html %>
+
+<body onload='init_send();'>
+
+<!-- Send -->
+<div class="container">
+
+    <div class="row">
+        <div class="twelve columns special head">
+            <h1>RunGym</h1>
+            <h3 class="lead"><%= header %></h3>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="twelve columns">
+            <div class="large primary btn" style="width:100%;"><button id="btnSend"    type="button"   style="width: 100%">trasferisci</button></div><br><br>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="twelve columns">
+            <div class="large danger btn" style="width:100%;"><a href="/mob/dashboard">dashboard</a></div>
+    	</div>
+    </div>
+    
+    <!--
+    <div class="row">
+        <div class="twelve columns">
+            <span id='res'></span>
+        </div>
+    </div>
+    //-->
+<% include footer.html %>

@@ -1,0 +1,76 @@
+<% include header.html %>
+
+<body onload='init_training();'>
+
+<!-- Training -->
+<div class="container">
+
+    <div class="row">
+      <div class="twelve columns">
+        <section class="pill tabs">
+          <ul class="tab-nav">
+            <li class="active"><a href="#">mappa</a></li>
+            <li><a href="#">cruscotto</a></li>
+            <li><a href="#">valori</a></li>
+          </ul>
+          <div class="tab-content active">
+            <div id="map_canvas"></div>
+          </div>
+          <div class="tab-content">
+           
+            <div class="row">
+                <div class="twelve columns">
+                    <h4><span id ='durata'>00:00:00</span></h4> 
+                </div>
+            </div>
+            <div class="row">
+                <div class="twelve columns">
+                    <h5><span id ='metri'>0</span>m</h5>
+                </div>
+            </div>
+            <div class="row">
+                <div class="twelve columns">
+                    <h6>velocità istantanea</h6>
+                    <li class="primary badge"><span id ='velms'>0</span>m/s</li>
+                    <li class="primary badge"><span id ='velkmh'>0</span>Km/h</li>    
+                </div>
+            </div>
+            <div class="row">
+                <div class="twelve columns">
+                    <h6>velocità media</h6>
+                    <li class="primary badge"><span id ='velmediams'>0</span>m/s</li>
+                    <li class="primary badge"><span id ='velmediakmh'>0</span>Km/h</li>
+                </div>
+            </div>
+            <div class="row">
+                <div class="twelve columns">
+                    <h6>calorie consumate e gr persi</h6>
+                    <li class="primary badge"><span id ='cal'>0</span>cal</li>
+                    <li class="primary badge"><span id ='gr'>0</span>gr</li>
+                </div>
+            </div>
+          </div>
+          
+          <div class="tab-content">
+            <span id="res"></span>
+          </div>
+          
+        </section>
+      </div>
+    </div>
+    
+    <div class="row">
+        <div class="twelve columns">
+            <div class="medium primary btn"><button id="btnStart" style="width: 130px;">inizia</button></div>
+            <div class="medium danger btn"><button id="btnEnd" style="width: 130px;">termina</button></div>
+    	</div>
+    </div>
+    
+    <div class="row">
+        <div class="twelve columns">
+        <label for="segui">Segui sulla mappa</label>
+        <input type="checkbox" name="segui" id="segui" checked />
+        </div>
+    </div>
+
+<% include footer.html %>

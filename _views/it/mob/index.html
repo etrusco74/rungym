@@ -1,0 +1,41 @@
+<% include header.html %>
+
+<body>
+
+<!-- Index -->
+<div class="container">
+    
+    <div class="row">
+        <div class="twelve columns special head">
+            <h1>RunGym</h1>
+            <h3 class="lead">La palestra della corsa, <span id='redcolor'>gratis!</span></h3>
+            <h6 class="lead">Iniza subito a misurare le tue <span id='redcolor'>performance</span> con <span id='redcolor'>rungym</span>,
+                la palestra <span id='redcolor'>gratuita</span> per gli amanti della <span id='redcolor'>corsa</span>
+            </h6>
+        </div>
+    </div>
+  
+    <div class="row">
+      <div class="twelve columns">
+        <section class="pill tabs">
+          <ul class="tab-nav">
+            <li class="active"><a href="#">accedi</a></li>
+            <li><a href="#">sei nuovo?</a></li>
+          </ul>
+          <div class="tab-content active">
+            <div class="large primary btn" style="width:100%;"><a href="/mob/login">allenati</a></div>
+          </div>
+          <div class="tab-content">
+            <div class="large secondary btn" style="width:100%;"><a href="/mob/registration">registrati</a></div>
+          </div>
+        </section>
+      </div>
+    </div>
+    
+    <div class="row">
+        <div class="twelve columns">
+             <li class="default label">Version <%= version %></li>
+        </div>
+    </div>
+</div>
+<% include footer.html %>

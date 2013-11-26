@@ -1,0 +1,75 @@
+<% include header.html %>
+
+<body onload='init_profile();'>
+
+<!-- Profile -->
+<div class="container">
+
+    <div class="row">
+        <div class="twelve columns special head">
+            <h1>RunGym</h1>
+            <h3 class="lead"><%= header %></h3>
+        </div>
+    </div>
+
+    <form class="cmxform" method="post" id="signupFormProfile" action="javascript: profile_send();">
+
+     <div class="row">
+        <ul class="twelve columns">
+
+        <li class="field"><label for='_id'>_id</label>
+        <input class="text input" type='text' name='_id' id='_id' style='color: #CC3300;' readonly /></li>
+
+        <li class="field"><label for='first_name'>Nome</label>
+        <input class="text input" type='text' name='first_name' id='first_name' /></li>
+
+        <li class="field"><label for='last_name'>Cognome</label>
+        <input class="text input" type='text' name='last_name' id='last_name' /></li>
+
+        <li class="field"><label for='username'>Username</label>
+        <input class="text input" type='text' name='username' id='username' style='color: #CC3300;' readonly /></li>
+
+        <li class="field"><label for='email'>Email</label>
+        <input class="text input" type='text' name='email' id='email' /></li>
+
+        <li class="field"><label for='registration_date'>Data Registrazione</label>
+        <input class="text input" type='text' name='registration_date' id='registration_date' style='color: #CC3300;' readonly /></li>
+
+        <li class="field"><label for='login_date'>Data Login</label>
+        <input class="text input" type='text' name='login_date' id='login_date' style='color: #CC3300;' readonly /></li>
+
+        <li class="field"><label for='registration_weight'>Peso alla registrazione</label>
+        <input class="text input" type="text" name='registration_weight' id='registration_weight' style='color: #CC3300;' readonly /></li>
+
+        <li class="field"><label for='story_weight'>Peso attuale</label>
+        <input class="text input" type="text" name='story_weight' id='story_weight' placeholder="Peso attuale in Kg" /></li>
+
+        <li class="field"><label for='story_date'>Ultimo aggiornamento peso</label>
+        <input class="text input" type="text" name='story_date' id='story_date' style='color: #CC3300;' readonly /></li>
+
+        <li class="field"><label for='born_date'>Data di nascita</label>
+        <input class="text input" type='text' name='born_date' id='born_date' /></li>
+
+        <li class="field">
+            <div class="picker">
+                <select name='gender' id='gender'>
+                    <option value='M' >Maschio</option>
+                    <option value='F' >Femmina</option>
+                </select>
+            </div>
+        </li>
+        </ul>
+    </div>
+
+    <div class="row">
+        <div class="twelve columns">
+            <div class="large primary btn"><button type="submit">vai</button></div>
+    		<div class="large secondary btn"><a href="/mob/dashboard">dashboard</a></div>
+    	</div>
+    </div>
+
+    </form>
+
+</div>
+
+<% include footer.html %>

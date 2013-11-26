@@ -1,0 +1,22 @@
+@CHARSET "UTF-8";
+
+body {
+	height: 100%;
+	margin: 0;
+	padding: 0;
+}
+
+#map_canvas {
+    width: 250px;
+    height: 200px;
+}
+
+#res {font-size: 12pt;color: #cc3300}
+#redcolor {color: #cc3300}
+
+h1.lead { border-bottom: 1px dotted #ccc; margin-bottom: 20px; }
+h2.lead { border-bottom: 1px dotted #ccc; margin-bottom: 20px; }
+h3.lead { border-bottom: 1px dotted #ccc; margin-bottom: 20px; }
+h4.lead { border-bottom: 1px dotted #ccc; margin-bottom: 20px; }
+h5.lead { border-bottom: 1px dotted #ccc; margin-bottom: 20px; }
+h6.lead { margin-bottom: 20px; }

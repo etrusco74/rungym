@@ -1,0 +1,33 @@
+<% include header.html %>
+
+<body onload='init_activity();'>
+
+<!-- Activity -->
+<div class="container">
+
+    <div class="row">
+        <div class="twelve columns special head">
+            <h1>RunGym</h1>
+            <h3 class="lead"><%= header %></h3>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="twelve columns">
+            <div class="picker">
+                <select name='activity' id='activity' data-theme='a' data-iconpos="left">
+                    <option value="0" selected>seleziona l'attività sportiva</option>
+                </select>
+                <br><br>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="twelve columns">            
+            <div class="large primary btn"><button id="btnGo">vai</button></div>
+        	<div class="large secondary btn"><a href="/mob/dashboard">dashboard</a></div>
+    	</div>
+    </div>
+
+<% include footer.html %>

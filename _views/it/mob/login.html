@@ -1,0 +1,35 @@
+<% include header.html %>
+
+<body onload='init_login();'>
+
+<!-- Login -->
+<div class="container">
+
+    <div class="row">
+        <div class="twelve columns special head">
+            <h1>RunGym</h1>
+            <h3 class="lead"><%= header %></h3>
+        </div>
+    </div>
+
+    <form class="cmxform" id="signupFormLogin" method="post" action="javascript: login_send();">
+    
+        <div class="row">
+            <ul class="twelve columns">
+                <li class="field"><input class="text input"     type="text"     name="username" id="username" value="" placeholder="Username" /></li>
+                <li class="field"><input class="password input" type="password" name="password" id="password" value="" placeholder="Password" /></li>
+            </ul>
+        </div>
+
+        <div class="row">
+            <div class="twelve columns">
+        		<div class="large primary btn"><button type="submit">vai</button></div>
+        		<div class="large secondary btn"><a href="/mob">indietro</a></div>
+        	</div>
+        </div>
+
+    </form>
+
+</div>
+
+<% include footer.html %>

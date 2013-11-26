@@ -1,0 +1,36 @@
+<% include header.html %>
+
+<body onload='init_logout();'>
+
+<!-- Login -->
+<div class="container">
+
+    <div class="row">
+        <div class="twelve columns special head">
+            <h1>RunGym</h1>
+            <h3 class="lead"><%= header %></h3>
+            <h6 class="lead"><span id='redcolor'>Logout</span> eseguito con successo</span>
+            </h6>
+        </div>
+    </div>
+    
+    <div class="row">
+      <div class="twelve columns">
+        <section class="pill tabs">
+          <ul class="tab-nav">
+            <li class="active"><a href="#">accedi</a></li>
+            <li><a href="#">sei nuovo?</a></li>
+          </ul>
+          <div class="tab-content active">
+            <div class="large primary btn" style="width:100%;"><a href="/mob/login">allenati</a></div>
+          </div>
+          <div class="tab-content">
+            <div class="large secondary btn" style="width:100%;"><a href="/mob/registration">registrati</a></div>
+          </div>
+        </section>
+      </div>
+    </div>
+    
+</div>
+
+<% include footer.html %>

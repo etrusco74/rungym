@@ -1,0 +1,60 @@
+<% include header.html %>
+
+<body onload='init_registration();'>
+
+<!-- Registration -->
+<div class="container">
+
+    <div class="row">
+        <div class="twelve columns special head">
+            <h1>RunGym</h1>
+            <h3 class="lead"><%= header %></h3>
+        </div>
+    </div>
+
+    <form class="cmxform" id="signupFormRegistration" method="post" action="javascript: registration_send();">
+
+    <div class="row">
+            <ul class="twelve columns">
+
+            <li class="field"><input class="text input"     type="text"     name="first_name" id="first_name" value="" placeholder="Nome"/></li>
+            <li class="field"><input class="text input"     type="text"     name="last_name" id="last_name" value="" placeholder="Cognome"/></li>
+            <li class="field"><input class="text input"     type="text"     name="username" id="username" value="" placeholder="Username"/></li>
+            <li class="field"><input class="text input"     type="password" name="password" id="password" value="" placeholder="Password"/></li>
+            <li class="field"><input class="text input"     type="password" name="repassword" id="repassword" value="" placeholder="Ripeti Password"/></li>
+            <li class="field"><input class="text input"     type="text"     name="email" id="email" value="" placeholder="email (example@example.com)"/></li>
+            <li class="field"><input class="text input"     type="text"     name="registration_weight" id="registration_weight" value="" placeholder="Peso in Kg"/></li>
+            <li class="field"><input class="text input"     type="text"     name="born_date" id="born_date" value="" size ="10" placeholder="data di nascita mm/gg/yyyy (Es. 12/31/1974)"/></li>
+            <li class="field">
+                <div class="picker">
+                    <select name="gender" id="gender">
+                        <option value="" selected>-- Seleziona il sesso --</option>
+                        <option value="M" >Maschio</option>
+                        <option value="F" >Femmina</option>
+                    </select>
+                </div>
+            </li>
+
+            </ul>
+    </div>
+
+    <div class="row">
+        <div class="twelve columns">
+        	<div class="large primary btn"><button type="submit">vai</button></div>
+    		<div class="large secondary btn"><a href="/mob">indietro</a></div>
+    	</div>
+    </div>
+
+    </form>
+
+    <!--
+    <div class="row">
+        <div class="twelve columns">
+            <span id="res"></span>
+        </div>
+    </div>
+    //-->
+    
+</div>
+
+<% include footer.html %>
