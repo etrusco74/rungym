@@ -1,10 +1,3 @@
-/** enable to log on nodefly - http://nodefly.com/ **/
-require('nodefly').profile(
-    '673f9f87-b3e1-4d5f-887f-e8a965924ac6',
-    ['rungym', process.env.SUBDOMAIN],
-    { blockThreshold: 10 }
-);
-
 var express = require('express');
 var path = require('path');
 var http = require('http');
