@@ -3,11 +3,11 @@
 node.js RESTful api:
 
   * Manage user 
-    `http verbs: get post put delete` [Enter]
+    `http verbs: get post put delete`
   * Manage activity type
-    `http verbs: get` [Enter]
+    `http verbs: get`
   * Manage training
-    `http verbs: get post delete` [Enter]
+    `http verbs: get post delete`
 
 That's it!
 
