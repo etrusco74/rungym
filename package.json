@@ -1,6 +1,6 @@
 {
   "name": "rungym",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "author": {
     "name": "Etrusco",
     "email": "ademarchi74@gmail.com"
@@ -23,17 +23,17 @@
     }
   ],
   "dependencies": {
-    "express": "3.4.7",
-    "mongodb": "1.3.23",
-    "mongoose": "3.8.3",
     "bcrypt": "0.7.7",
     "ejs": "0.8.5",
+    "express": "3.x",
+    "locale": "0.0.12",
+    "mongodb": "1.3.23",
+    "mongoose": ">=3.6",
     "node-uuid": "1.4.1",
-    "time": "0.10.0",
-    "locale": "0.0.12"
+    "time": "0.10.0"
   },
   "engines": {
-    "node": ">=0.4",
+    "node": "0.10.x",
     "npm": ">=1.1"
   },
   "subdomain": "rungym",
