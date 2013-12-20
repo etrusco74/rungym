@@ -23,15 +23,14 @@
     }
   ],
   "dependencies": {
-    "express": "3.2.6",
-    "mongodb": "1.3.10",
-    "mongoose": "3.6.11",
+    "express": "3.4.7",
+    "mongodb": "1.3.23",
+    "mongoose": "3.8.3",
     "bcrypt": "0.7.7",
-    "ejs": "0.8.4",
-    "node-uuid": "1.4.0",
+    "ejs": "0.8.5",
+    "node-uuid": "1.4.1",
     "time": "0.10.0",
-    "locale": "0.0.10",
-    "nodefly": "stable"
+    "locale": "0.0.12"
   },
   "engines": {
     "node": ">=0.4",
